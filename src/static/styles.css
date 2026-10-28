@@ -74,6 +74,73 @@ section h3 {
   margin-bottom: 8px;
 }
 
+.participants-section {
+  margin-top: 14px;
+  padding: 12px 14px;
+  background-color: #fff;
+  border: 1px solid #e1e6ef;
+  border-left: 3px solid #00897b;
+  border-radius: 4px;
+}
+
+.participants-section h5 {
+  margin-bottom: 8px;
+  color: #155e59;
+  font-size: 0.9rem;
+}
+
+.participant-list {
+  padding-left: 0;
+  list-style: none;
+  color: #44505e;
+  font-size: 0.9rem;
+}
+
+.participant-list li {
+  padding: 2px 0;
+  overflow-wrap: anywhere;
+}
+
+.participant-list li:not(.participant-empty) {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 8px;
+}
+
+.participant-remove {
+  flex: 0 0 28px;
+  width: 28px;
+  height: 28px;
+  padding: 0;
+  border: 1px solid #d5dce5;
+  border-radius: 4px;
+  background-color: #fff;
+  color: #9c2f35;
+  font-size: 21px;
+  line-height: 1;
+}
+
+.participant-remove:hover {
+  background-color: #fff0f0;
+  border-color: #c65a5e;
+}
+
+.participant-remove:focus-visible {
+  outline: 2px solid #00897b;
+  outline-offset: 2px;
+}
+
+.participant-remove:disabled {
+  cursor: wait;
+  opacity: 0.55;
+}
+
+.participant-list .participant-empty {
+  color: #707b88;
+  font-style: italic;
+}
+
 .form-group {
   margin-bottom: 15px;
 }
